@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'plain-light';
+    src: url(./Font/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'plain-regular';
+    src: url(./Font/plain-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'silk-italic';
+    src: url(./Font/silkserif-lightitalic-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'silk-regular';
+    src: url(./Font/silkserif-regularitalic-webfont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: plain-regular;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: #030303;
+    z-index: 999;
+    position: fixed;
+    padding: 25vh 10vw;
+}
+
+.line {
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.line h2 {
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0% {
+        font-family: plain-regular;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    48% {
+        font-family: plain-regular;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+    50% {
+        font-family: silk-regular;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+
+    100% {
+        font-family: silk-regular;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+#line-part1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#line-part1 h5 {
+    width: 5vw;
+    text-align: right;
+}
+
+#line-part1 h5,
+#line-part1 h6 {
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: silk-regular;
+}
+
+
+#main {
+    position: relative;
+    background-color: #030303;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
