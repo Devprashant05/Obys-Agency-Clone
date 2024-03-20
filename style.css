@@ -33,6 +33,17 @@ body {
     width: 100%;
 }
 
+.crsr {
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1.5px solid #ffffffbe;
+    position: fixed;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
 #loader {
     height: 100%;
     width: 100%;
@@ -130,4 +141,56 @@ body {
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 5.5vw;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+}
+
+#nav-part2 h4 {
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.hero {
+    height: fit-content;
+    width: 73%;
+    margin-left: 27%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero:nth-child(2) {
+    margin-top: 17vh;
+}
+
+.hero h1 {
+    font-size: 7.5vw;
+    font-weight: 500;
+    line-height: 7.5vw;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 7.5vw;
+    font-weight: 500;
+    line-height: 7.5vw;
+    text-transform: uppercase;
+}
+
+.hero h2:hover {
+    -webkit-text-stroke: 2px #fff;
+    font-weight: 500;
+    color: transparent;
 }
