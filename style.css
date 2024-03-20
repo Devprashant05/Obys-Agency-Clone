@@ -187,10 +187,154 @@ body {
     font-weight: 500;
     line-height: 7.5vw;
     text-transform: uppercase;
+    border-bottom: 5px solid #fff;
+    /* transition: all ease 0.3s; */
+    /* padding-bottom: 0.5vw; */
 }
 
 .hero h2:hover {
     -webkit-text-stroke: 2px #fff;
     font-weight: 500;
     color: transparent;
+    border-bottom: 5px solid transparent;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    padding-top: 17vh;
+    position: relative;
+}
+
+.video-container {
+    height: 66vh;
+    width: 71vw;
+    position: relative;
+    left: 29%;
+    background-image: url(./assets/asset\ 1.jpeg);
+}
+
+.video-crsr {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #FEA63C;
+    position: absolute;
+    top: -13%;
+    left: 65%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-crsr i {
+    font-size: 2.5vw;
+}
+
+.video-container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+.video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding-top: 7vh 0;
+}
+
+.page4-content {
+    width: 72vw;
+    margin-left: 28%;
+}
+
+.page4-content h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+.page4-content .underline {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 5vw 0 3vw 0;
+}
+
+.page4-content>p {
+    font-size: 2.1vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+
+.page4-flex {
+    display: flex;
+}
+
+.page4-flex img {
+    width: 48%;
+}
+
+.page4-flex>p {
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+    width: 28%;
+    margin-left: 2vw;
+}
+
+.page4-blue {
+    background-color: #3F7DF4;
+    width: 33vw;
+    padding: 4vw 3vw;
+    position: relative;
+    margin-top: -29vh;
+    margin-left: 24.5vw;
+}
+
+.blue-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.7vw 0;
+    border-bottom: 1.5px solid #fff;
+}
+
+.blue-text h4 {
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+.blue-text>p {
+    width: 35%;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#page4 h5 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
 }
