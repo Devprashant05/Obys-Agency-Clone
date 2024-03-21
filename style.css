@@ -33,15 +33,22 @@ body {
     width: 100%;
 }
 
-.crsr {
-    height: 2.5vw;
-    width: 2.5vw;
-    border-radius: 50%;
-    border: 1.5px solid #ffffffbe;
-    position: fixed;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.mousefollower {
+    /* height: 2.5vw; */
+    /* width: 2.5vw; */
+    /* border-radius: 50%; */
+    border: px solid #ffffff;
+    background-color: #fff;
+    /* position: fixed; */
+    scale: 2;
     mix-blend-mode: difference;
-    transform: translate(-50%, -50%);
-    z-index: 999;
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 999; */
 }
 
 #loader {
@@ -54,7 +61,6 @@ body {
 }
 
 .line {
-    /* background-color: red; */
     height: fit-content;
     overflow: hidden;
     display: flex;
@@ -134,13 +140,14 @@ body {
 
 #main {
     position: relative;
-    background-color: #030303;
+    background-color: #151515;
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    margin-bottom: 10vh;
 }
 
 #nav {
@@ -211,12 +218,27 @@ body {
     border-bottom: 5px solid transparent;
 }
 
+#hero3 {
+    position: relative;
+    z-index: 999;
+}
+
+#flag {
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
 #page2 {
     height: 100vh;
     width: 100%;
     background-color: #151515;
     padding-top: 17vh;
     position: relative;
+
 }
 
 .video-container {
@@ -224,12 +246,14 @@ body {
     width: 71vw;
     position: relative;
     left: 29%;
-    background-image: url(./assets/asset\ 1.jpeg);
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .video-crsr {
-    height: 10vw;
-    width: 10vw;
+    height: 9vw;
+    width: 9vw;
     border-radius: 50%;
     background-color: #FEA63C;
     position: absolute;
@@ -257,21 +281,158 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0;
 }
 
 #page3 {
     min-height: 100vh;
     width: 100%;
-    background-color: black;
+    position: relative;
+    padding: 17vh 2vw;
+    margin-bottom: 60vh;
+    margin-top: 20vh;
+}
+
+.page3-content {
+    width: 72vw;
+    margin-left: 28%;
+}
+
+
+#page3 h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
     position: relative;
 }
+
+#page3 h1::before {
+    content: '02';
+    position: absolute;
+    font-size: 3vw;
+    font-family: silk-regular;
+    font-weight: 100;
+    left: -15%;
+    top: 8%;
+}
+
+#p3-image-div {
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.image-div {
+    height: 38vw;
+    width: 28vw;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw;
+}
+
+.image-div:nth-child(1) {
+    height: 29vw;
+    width: 22vw;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.p3-circle1 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23vh;
+    margin-left: 10vw;
+    position: relative;
+}
+
+.p3-circle1 img {
+    height: 30%;
+    color: white;
+}
+
+.p3-circle2 {
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.p3-circle2 img {
+    height: 30%;
+    color: white;
+    rotate: -45deg;
+}
+
+#circle-in {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    scale: 0;
+    transition: all ease 0.3s;
+}
+
+#circle-in p {
+    font-size: 1vw;
+    color: #000;
+    font-weight: 500;
+    scale: 0;
+    transition: all ease 0.3s;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+
+.p3-circle1:hover #circle-in {
+    scale: 1;
+}
+
+.p3-circle1:hover #circle-in p {
+    scale: 1;
+    opacity: 1;
+}
+
+
+.p3-circle2:hover #circle-in {
+    scale: 1;
+}
+
+.p3-circle2:hover #circle-in p {
+    scale: 1;
+    opacity: 1;
+}
+
 
 #page4 {
     min-height: 100vh;
     width: 100%;
-    background-color: #151515;
     position: relative;
     padding-top: 7vh 0;
+    margin-bottom: 30vh;
 }
 
 .page4-content {
@@ -362,6 +523,7 @@ body {
     width: 100%;
     position: relative;
     padding: 10vw 0;
+    margin-bottom: 30vh;
 }
 
 .p5-elem {
@@ -429,7 +591,7 @@ body {
 }
 
 #footer {
-    min-height: 85vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     padding-left: 28vw;
@@ -488,4 +650,9 @@ body {
     font-size: 1.1vw;
     font-weight: 500;
     margin-bottom: 50%;
+}
+
+._canvas_container {
+    z-index: 99999 !important;
+    pointer-events: none;
 }
