@@ -51,7 +51,7 @@ function loadingScreen() {
                 } else {
                     h5.innerHTML = grow;
                 }
-            }, 34);
+            }, 27);
         },
     });
 
@@ -63,13 +63,13 @@ function loadingScreen() {
     tl.to("#loader", {
         opacity: 0,
         duration: 0.2,
-        delay: 0,
+        delay: 2.6,
     });
 
     tl.from("#page1", {
         y: 1600,
         opacity: 0,
-        delay: 0.2,
+        delay: 0.1,
         duration: 0.5,
         ease: Power4
     });
